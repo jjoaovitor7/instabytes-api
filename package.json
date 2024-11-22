@@ -1,9 +1,9 @@
 {
-  "name": "",
+  "name": "instabytes-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "type": "module",
+  "main": "index.js",
   "license": "MIT",
   "private": false,
   "engines": {
@@ -28,6 +28,8 @@
     "test": ""
   },
   "dependencies": {
-    "express": "^4.21.1"
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "nano": "^10.1.4"
   }
 }
