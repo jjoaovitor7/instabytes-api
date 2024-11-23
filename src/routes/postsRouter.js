@@ -4,7 +4,7 @@ import { list, createPost, uploadImg, updatePost } from "../controllers/postsCon
 import cors from "cors";
 
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: process.env.FRONT_URL,
   optionsSuccessStatus: 200
 }
 

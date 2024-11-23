@@ -1,7 +1,12 @@
 import dbConn from "../config/dbConn.js";
 
-// const _dbConn = await dbConn();
-// await dbConn.db.create("instabytes_posts");
+// dbConn().then(async (data) => {
+//   await data.db.destroy("instabytes_posts");
+// });
+
+// dbConn().then(async (conn) => {
+//   await conn.db.create("instabytes_posts");
+// });
 
 export async function getAll() {
   const _dbConn = await dbConn();
