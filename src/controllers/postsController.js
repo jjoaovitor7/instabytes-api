@@ -3,8 +3,12 @@ import { create, getAll, update } from "../models/postsModel.js";
 import generateAIDescription from "../services/geminiService.js";
 
 export async function list(req, res) {
-  const posts = await getAll();
-  return res.status(200).json(posts);
+  try {
+    const posts = await getAll();
+    return res.status(200).json(posts);
+  } catch (err) {
+    return res.status(500).json({ "error": err.message });
+  }
 }
 
 export async function createPost(req, res) {
